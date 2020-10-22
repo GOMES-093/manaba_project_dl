@@ -1,0 +1,2 @@
+# manaba_project_dl
+PythonのWebスクレイピングでmanabaのプロジェクトに提出された提出物を一括でダウンロードする

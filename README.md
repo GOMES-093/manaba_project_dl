@@ -1,2 +1,2 @@
-# manaba_project_dl
+# manabaのプロジェクトに提出されたレポート一括ダウンローダー
 PythonのWebスクレイピングでmanabaのプロジェクトに提出された提出物を一括でダウンロードする

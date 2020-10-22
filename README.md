@@ -8,5 +8,5 @@ PythonのWebスクレイピングでmanabaのプロジェクトに提出され�
 こんな感じのURL→```https://xxx.manaba.jp/ct/course_xxxxxx_psubmission_xxxxxx```  
 main.pyを実行(Python3)  
 URLを問われるので、コピーしておいたURLを貼り付ける  
-manabaのIDとパスワードを入力してログイン（セッションidがカレントディレクトリ内のsession.txtに保存されるので、セッションがタイムアウトするまではログイン情報を入れる必要がありません）  
+manabaのIDとパスワードを入力してログイン（セッションidがカレントディレクトリ内のsession.txtに保存されるので、次に使うときセッションがタイムアウトするまではログイン情報を入れる必要がありません）  
 あとは勝手にダウンロードされます。zipファイルも勝手に解凍します。  

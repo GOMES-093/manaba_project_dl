@@ -20,7 +20,10 @@ import loginmgr
 load_url     =  ""
 # 各個人の提出物をそれぞれのフォルダにまとめるか(True/False)
 # 一人当たり2つ以上のファイルがある場合はTrueのがいいです
-named_folder =  True
+named_folder  = True
+# フォルダの先頭に連番(True/False)
+# 出席とかとるときは便利かも
+serial_folder = True
 #
 ###############
 
@@ -54,7 +57,9 @@ n = len(chap.select("li"))
 print("%d件のダウンロードを開始"%n)
 for i,element in enumerate(chap.select("li"),start=1):    # その中のliタグの文字列を表示
     print("[%d/%d]名前：%s"%(i,n,element.text))
-    name = element.text
+    name=element.text
+    if serial_folder:
+        name = str(i)+"_"+element.text
     name_path=dir_path+name+"/"
     if not named_folder:
         name_path = dir_path
